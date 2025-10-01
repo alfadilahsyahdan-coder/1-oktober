@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Girl Foto & Lagu</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        background: linear-gradient(135deg, #ffecd2, #fcb69f);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 40px;
+        border-radius: 25px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+        max-width: 90%;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+    h1 {
+        font-size: 2.5rem;
+        color: #ff4081;
+        margin-bottom: 20px;
+    }
+    .photo-space {
+        width: 420px;
+        height: 400px;
+        border-radius: 20px;
+        background: #fff;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        overflow: hidden;
+        margin: auto;
+        position: relative;
+    }
+    .photo-slider {
+        display: flex;
+        width: calc(420px * 5); /* jumlah foto */
+        animation: slideGallery 20s infinite linear;
+    }
+    .photo-slider img {
+        width: 420px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    audio {
+        margin-top: 20px;
+        width: 100%;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 10px;
+        background: #ff4081;
+        color: white;
+        cursor: pointer;
+        margin-top: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    button:hover {
+        background: #ff79a9;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideGallery {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-1680px); } /* 4 foto geser */
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>My Girl 💖</h1>
+    <div class="photo-space">
+        <div class="photo-slider">
+            <img src="tia.jpg" alt="My Girl 1">
+            <img src="tia2.jpg" alt="My Girl 3">
+            <img src="tia3.jpg" alt="My Girl 2">
+            <img src="tua4.jpg" alt="My Girl 4">
+            <img src="tia5.jpg" alt="My Girl 5">
+        </div>
+    </div>
+    <audio autoplay loop controls>
+        <source src="my girl 1 Oktober bucin shorts trending trand.mp3" type="audio/mpeg">
+        Browser kamu tidak mendukung audio.
+    </audio>
+    <br>
+    <button onclick="location.href='index.html'">Kembali</button>
+</div>
+
+</body>
+</html>
